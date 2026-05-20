@@ -1,0 +1,9 @@
+dc83ea6ae1ebabb1526297af3789ef1a *DESCRIPTION
+5932739c87eb7aa8926349a36bc5220b *LICENSE
+7d7aef24caccb06c386b1ec7b6b43f2a *NAMESPACE
+abe4cc2d54f82bef26846773bee7567a *R/data.R
+38389b04ed3d6f0805c64191a6d7a2d2 *R/phenology.R
+f8aba7f5434ba1bc52a10f1a1a52b14c *data/pest_thresholds.rda
+bcc8aca9e17807d850421ed8cf1b716e *man/calc_pest_phenology.Rd
+0c35fd250003190f3b8d4931d2408bc8 *man/pest_thresholds.Rd
+d12add0ec0300a930bc4fb28ed6039f0 *man/plot_phenology_trend.Rd

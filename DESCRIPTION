@@ -1,0 +1,17 @@
+Package: TrackTrap
+Title: Model Cumulative Growing Degree-Days for Pest Monitoring
+Version: 0.1.0
+Authors@R: person("Santosh", "Bhandari", email = "santoshbhandari4556@gmail.com", role = c("aut", "cre"))
+Description: Raw data from pest monitoring/traps can be correlated with environmental factors such as temperature, growing degree day etc. to get useful insights about the pest phenology. This package pulls temperature data from the California Irrigation Management Information System ('CIMIS', <https://cimis.water.ca.gov>) or the 'Daymet' application programming interface ('API', <https://daymet.ornl.gov>) for a user-specified time period and calculates cumulative growing degree-days. Users provide pest development thresholds (lower and upper temperatures) and the geographic coordinates of the trap location to track emergence and phenology.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5)
+LazyData: true
+Imports: daymetr, degday, dplyr, ggplot2, magrittr, rlang
+NeedsCompilation: no
+Packaged: 2026-05-16 03:17:56 UTC; UCCETC1
+Author: Santosh Bhandari [aut, cre]
+Maintainer: Santosh Bhandari <santoshbhandari4556@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-05-20 09:00:07 UTC
