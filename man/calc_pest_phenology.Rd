@@ -2,46 +2,36 @@
 % Please edit documentation in R/phenology.R
 \name{calc_pest_phenology}
 \alias{calc_pest_phenology}
-\title{Calculate cumulative degree-days for a pest using Daymet API or CIMIS CSV FILE}
+\title{Calculate Pest Phenology}
 \usage{
 calc_pest_phenology(
   trap_data,
   pest = NULL,
   lat = NULL,
   lon = NULL,
+  weather_source = "open_meteo",
+  cimis_csv_path = NULL,
   custom_lower = NULL,
-  custom_upper = NULL,
-  cimis_csv = NULL
+  custom_upper = NULL
 )
 }
 \arguments{
-\item{trap_data}{A data frame containing \code{date} and \code{trap_counts}.}
+\item{trap_data}{A data frame containing trap counts}
 
-\item{pest}{A string representing the pest code (e.g., "OLFF", "NOW"). See \code{pest_thresholds} dataset.}
+\item{pest}{Name of the pest}
 
-\item{lat}{Latitude of the trap location (numeric).}
+\item{lat}{Latitude}
 
-\item{lon}{Longitude of the trap location (numeric).}
+\item{lon}{Longitude}
 
-\item{custom_lower}{Optional. Override the database with a custom lower threshold.}
+\item{weather_source}{Weather data source}
 
-\item{custom_upper}{Optional. Override the database with a custom upper threshold.}
+\item{cimis_csv_path}{Path to the CIMIS csv file}
 
-\item{cimis_csv}{Optional. File path to a manually downloaded CIMIS daily CSV file.}
-}
-\value{
-A data frame joining the trap data with daily temperatures and cumulative degree-days.
+\item{custom_lower}{Lower developmental threshold}
+
+\item{custom_upper}{Upper developmental threshold}
 }
 \description{
-Calculate cumulative degree-days for a pest using Daymet API or CIMIS CSV FILE
-}
-\examples{
-\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
-  # Create mock trap data for testing
-  trap_df <- data.frame(date = as.Date(c("2024-05-01", "2024-05-08")),
-                        trap_counts = c(2, 14))
-
-  # Calculate phenology using Daymet API
-  results <- calc_pest_phenology(trap_df, pest = "OLFF", lat = 38.5, lon = -121.8)
-\dontshow{\}) # examplesIf}
+Calculate Pest Phenology
 }

@@ -3,7 +3,6 @@
 #' A dataset containing the lower and upper developmental temperature
 #' thresholds (in Fahrenheit) for common agricultural pests in California.
 #'
-#' @format A data frame with 5 rows and 4 variables:
 #' \describe{
 #'   \item{pest_code}{Short abbreviation for the pest (e.g., OLFF, NOW)}
 #'   \item{pest_name}{Common name of the pest}
